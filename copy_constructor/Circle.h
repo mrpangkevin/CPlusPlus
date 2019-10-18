@@ -1,16 +1,17 @@
+#pragma once
 #include "Shape.h"
 using namespace std;
 class Circle : public Shape{
 public:
-    virtual void draw();
+    void draw();
     Circle();
     ~Circle();
 };
 Circle::Circle()
 {
-    cout<<"Circle Constructor"<<endl;
+    cout<<"Circle Constructor:"<<this<<endl;
 }
 Circle::~Circle()
 {
-    cout<<"Circle Disconstructor"<<endl;
+    cout<<"Circle Disconstructor:"<<this<<endl;
 }
